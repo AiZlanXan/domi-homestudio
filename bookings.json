@@ -1,0 +1,20 @@
+{
+  "timezone": "America/Toronto",
+  "notes": "weekday: 0=周日 … 6=周六。repeat weekly 会套到接下来七天；单次占用用 {date:'YYYY-MM-DD', start:'HH:MM'}。",
+  "hours": {
+    "weekday": { "start": "19:00", "end": "22:00" },
+    "weekend": { "start": "10:00", "end": "20:00" }
+  },
+  "slotMinutes": 60,
+  "bookings": [
+    { "repeat": "weekly", "weekday": 1, "start": "19:00" },
+    { "repeat": "weekly", "weekday": 2, "start": "20:00" },
+    { "repeat": "weekly", "weekday": 4, "start": "21:00" },
+    { "repeat": "weekly", "weekday": 5, "start": "19:00" },
+    { "repeat": "weekly", "weekday": 6, "start": "11:00" },
+    { "repeat": "weekly", "weekday": 6, "start": "14:00" },
+    { "repeat": "weekly", "weekday": 6, "start": "16:00" },
+    { "repeat": "weekly", "weekday": 0, "start": "10:00" },
+    { "repeat": "weekly", "weekday": 0, "start": "13:00" }
+  ]
+}

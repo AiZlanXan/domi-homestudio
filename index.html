@@ -20,6 +20,7 @@
     <small>HOMESTUDIO</small></a>
     <nav aria-label="主导航">
         <a href="#crafts">手作项目/What we make</a>
+        <a href="#week">本周时间/Hours</a>
         <a href="#about">关于小店/About us</a>
         <a href="#contact" class="nav-cta">预约 / 联系 Book / Contact<span>↗</span></a>
     </nav>
@@ -115,11 +116,35 @@
     </div>
 </section>
 
-
+<section id="week" class="section wrap week-section">
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">02 / THIS WEEK AT THE STUDIO</span>
+            <h2 id="week-heading">接下来一周，什么时候有空？</h2>
+        </div>
+        <p>按 Ottawa 时间，每小时一档。<br>点选某一天，时段在下方固定区域打开。</p>
+    </div>
+    <div class="week-panel">
+        <div class="week-panel-top">
+            <p id="week-summary" class="week-summary" aria-live="polite">正在查看本周空档……</p>
+            <ul class="week-legend" aria-label="时段状态说明">
+                <li><span class="slot open" aria-hidden="true"><span class="slot-time">19:00</span><span class="slot-state">可约</span></span></li>
+                <li><span class="slot booked" aria-hidden="true"><span class="slot-time">20:00</span><span class="slot-state">已约</span></span></li>
+                <li><span class="slot past" aria-hidden="true"><span class="slot-time">18:00</span><span class="slot-state">已过</span></span></li>
+            </ul>
+        </div>
+        <div id="week-board" class="week-board" role="tablist" aria-label="接下来七天"></div>
+        <div id="week-slot-panel" class="week-slot-panel" role="tabpanel" aria-live="polite">
+            <p class="week-slot-empty">点选上面的某一天，查看当天时段。</p>
+        </div>
+        <p class="week-note">占用数据来自 <code>bookings.json</code>，含每周重复的演示预约。这不是实时库存，也不能在此下单。</p>
+        <noscript><p class="week-note">请开启 JavaScript 查看接下来七天的可约时段。工作日 19:00–22:00，周末 10:00–20:00。</p></noscript>
+    </div>
+</section>
 
 <section id="contact" class="section wrap contact-section">
     <div class="contact-copy">
-        <span class="eyebrow">02 / LET’S MAKE A LITTLE PLAN</span>
+        <span class="eyebrow">03 / LET’S MAKE A LITTLE PLAN</span>
         <h2>留一点时间，<br>给喜欢的事。</h2>
         <p>选好项目，告诉我们你的想法。<br>具体款式、时间与费用，与47沟通后确认。</p>
         <dl class="contact-details">
@@ -134,9 +159,9 @@
             </div>
             <div>
                 <dt>营业时间</dt>
-                <dd>weekday 12:00 - 18:00<br>
-                    Friday & Saturday 12:00 - 20:00
-
+                <dd>工作日 19:00 – 22:00<br>
+                    周六、周日 10:00 – 20:00<br>
+                    Ottawa 时间
                 </dd>
             </div></dl>
             
