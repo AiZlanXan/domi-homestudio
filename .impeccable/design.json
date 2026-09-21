@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-21T00:00:00.000Z",
+  "title": "Design System: domi homestudio",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Studio Teal / 工坊藏青",
+        "canonical": "#164d5b",
+        "tonalRamp": ["#0a242b", "#0f3540", "#164d5b", "#1e6577", "#2a8094", "#4a9aab", "#8dc4ce", "#d4ecef"]
+      },
+      "teal": {
+        "role": "primary",
+        "displayName": "Deep Teal / favicon 青",
+        "canonical": "#076e8a",
+        "tonalRamp": ["#043848", "#05566b", "#076e8a", "#0a8aad", "#2aa4c4", "#4ac6e9", "#9ddff2", "#d5f7fc"]
+      },
+      "homestudio-cyan": {
+        "role": "primary",
+        "displayName": "Homestudio Cyan / 品牌青",
+        "canonical": "#147c99",
+        "tonalRamp": ["#0b3f4e", "#0f5c73", "#147c99", "#1a9bbd", "#4ac6e9", "#7dd6ef", "#cbeef4", "#e4f6f8"]
+      },
+      "candy-heart-pink": {
+        "role": "secondary",
+        "displayName": "Candy Heart Pink / 糖果粉色",
+        "canonical": "#ffd7e3",
+        "tonalRamp": ["#8a3d55", "#ba5477", "#ec85a4", "#ef83a3", "#ffd1df", "#ffd7e3", "#ffe0e9", "#fff0f4"]
+      },
+      "sky-blue": {
+        "role": "tertiary",
+        "displayName": "Sky Blue / 天空青",
+        "canonical": "#4ac6e9",
+        "tonalRamp": ["#076e8a", "#147c99", "#2aa4c4", "#4ac6e9", "#53b5cf", "#9ddff2", "#d5f7fc", "#e4f6f8"]
+      },
+      "bead-box-mint": {
+        "role": "secondary",
+        "displayName": "Bead-Box Mint / 薄荷绿",
+        "canonical": "#d8ffd0",
+        "tonalRamp": ["#3d7a3a", "#6db36a", "#a8e09e", "#c8f5be", "#d8ffd0", "#e6f6cf", "#f2ffe9", "#fafff7"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Blush Paper / 腮红纸",
+        "canonical": "#fffafb",
+        "tonalRamp": ["#dfdadc", "#e1dbdd", "#f2d9e1", "#fff0f4", "#fffafb", "#ffffff", "#fffafb", "#ffffff"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line / 工坊线",
+        "canonical": "#163e4c",
+        "tonalRamp": ["#0c2229", "#163e4c", "#173e4c", "#164d5b", "#377988", "#5b7279", "#c9d5d8", "#d8dee0"]
+      },
+      "preview-bar": {
+        "role": "neutral",
+        "displayName": "Preview Bar",
+        "canonical": "#174f60",
+        "tonalRamp": ["#0c2a33", "#174f60", "#1e6577", "#26738b", "#4a9aab", "#8dc4ce", "#cbeef4", "#e4f6f8"]
+      },
+      "muted-text": {
+        "role": "neutral",
+        "displayName": "Muted Text / 次级字",
+        "canonical": "#5b7279",
+        "tonalRamp": ["#377988", "#536c74", "#5b7279", "#607780", "#647880", "#6a8087", "#748188", "#869398"]
+      },
+      "eyebrow": {
+        "role": "neutral",
+        "displayName": "Eyebrow",
+        "canonical": "#377988",
+        "tonalRamp": ["#164d5b", "#26738b", "#377988", "#4a9aab", "#65808a", "#8dc4ce", "#cbeef4", "#e4f6f8"]
+      },
+      "heart": {
+        "role": "secondary",
+        "displayName": "Pixel Heart",
+        "canonical": "#ec85a4",
+        "tonalRamp": ["#a64669", "#ba5477", "#ca6587", "#ec85a4", "#ef83a3", "#e991ab", "#ffd1df", "#ffe6ee"]
+      },
+      "ribbon": {
+        "role": "tertiary",
+        "displayName": "Ribbon Wash",
+        "canonical": "#d5f7fc",
+        "tonalRamp": ["#147c99", "#4ac6e9", "#53b5cf", "#a7d5df", "#cbeef4", "#d5f7fc", "#e4f6f8", "#f4fcfd"]
+      },
+      "beads-card": {
+        "role": "secondary",
+        "displayName": "Beads Card",
+        "canonical": "#ffe0e9",
+        "tonalRamp": ["#ba5477", "#ec85a4", "#ffd1df", "#ffd7e3", "#ffe0e9", "#ffe6ee", "#fff0f4", "#fffafb"]
+      },
+      "nails-card": {
+        "role": "tertiary",
+        "displayName": "Nails Card",
+        "canonical": "#d7f4fa",
+        "tonalRamp": ["#147c99", "#4ac6e9", "#a7d5df", "#cbeef4", "#d5f7fc", "#d7f4fa", "#e4f6f8", "#f4fcfd"]
+      },
+      "charms-card": {
+        "role": "secondary",
+        "displayName": "Charms Card",
+        "canonical": "#e6f6cf",
+        "tonalRamp": ["#6db36a", "#a8e09e", "#c8f5be", "#d8ffd0", "#e6f6cf", "#f2ffe9", "#fafff7", "#ffffff"]
+      },
+      "about-wash": {
+        "role": "neutral",
+        "displayName": "About Graph Paper",
+        "canonical": "#fff0f4",
+        "tonalRamp": ["#edb3c5", "#f2d9e1", "#ffe6ee", "#fff0f4", "#fffafb", "#ffffff", "#fffafb", "#ffffff"]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#dfdadc", "#e1dbdd", "#f2d9e1", "#fff0f4", "#fffafb", "#ffffff", "#ffffff", "#ffffff"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero h1 only. Pink highlighter sits under the last word." },
+      "headline": { "displayName": "Headline", "purpose": "Section h2. Contact block may go to 39px." },
+      "title": { "displayName": "Title", "purpose": "Craft card h3 and booking panel heading." },
+      "body": { "displayName": "Body", "purpose": "All running copy. Line-height 1.8–2.0 on the blush paper." },
+      "label": { "displayName": "Label", "purpose": "Uppercase English eyebrows, ribbon, card indices, wordmark small caps." }
+    },
+    "shadows": [
+      { "name": "pink-sticker", "value": "3px 3px 0 #ffd7e3", "purpose": "Nav CTA and hero art label." },
+      { "name": "ink-stamp", "value": "4px 4px 0 #163e4c", "purpose": "Primary button at rest." },
+      { "name": "ink-stamp-hover", "value": "5px 6px 0 #163e4c", "purpose": "Primary button hover, paired with translate(-1px,-2px)." },
+      { "name": "card-stamp", "value": "4px 5px 0 #173e4c", "purpose": "Craft cards." },
+      { "name": "panel-stamp", "value": "7px 7px 0 #cbeef4", "purpose": "Booking panel." },
+      { "name": "dialog-stamp", "value": "8px 8px 0 #a7d5df", "purpose": "Booking summary dialog." },
+      { "name": "polaroid-stamp", "value": "7px 7px 0 #edb3c5", "purpose": "About-section owner polaroid." }
+    ],
+    "motion": [
+      { "name": "button-lift", "value": "transform .15s, box-shadow .15s", "purpose": "Primary button hover lift." },
+      { "name": "card-lift", "value": "transform .2s", "purpose": "Craft card translateY(-4px) on hover." },
+      { "name": "reduced", "value": "transition: none", "purpose": "Honor prefers-reduced-motion on every animated property." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "640px" },
+      { "name": "tablet", "value": "900px" },
+      { "name": "wide", "value": "1500px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Mint sticker CTA with ink outline and hard offset shadow.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">预约我的手作时光 <span>↗</span></button>",
+      "css": ".ds-btn-primary { display: inline-flex; justify-content: center; align-items: center; gap: 30px; padding: 14px 23px; background: #d8ffd0; color: #164d5b; border: 2px solid #163e4c; border-radius: 6px; font-weight: 800; font-size: 15px; box-shadow: 4px 4px 0 #163e4c; cursor: pointer; transition: transform .15s, box-shadow .15s; } .ds-btn-primary:hover { transform: translate(-1px, -2px); box-shadow: 5px 6px 0 #163e4c; } .ds-btn-primary:focus-visible { outline: 3px solid #0585aa; outline-offset: 5px; }"
+    },
+    {
+      "name": "Ghost Text Link",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary text action with no border or shadow.",
+      "html": "<button class=\"ds-text-link\" type=\"button\">先逛逛小店 ↓</button>",
+      "css": ".ds-text-link { font-size: 14px; font-weight: 700; color: #164d5b; border: 0; background: none; padding: 8px 0; cursor: pointer; } .ds-text-link:focus-visible { outline: 3px solid #0585aa; outline-offset: 5px; }"
+    },
+    {
+      "name": "Nav CTA",
+      "kind": "nav",
+      "refersTo": "nav-cta",
+      "description": "Outlined header booking chip with a pink sticker shadow.",
+      "html": "<a class=\"ds-nav-cta\" href=\"#contact\">预约 / 联系 Book / Contact<span>↗</span></a>",
+      "css": ".ds-nav-cta { display: inline-flex; align-items: center; color: #164d5b; border: 1.5px solid #163e4c; padding: 9px 19px; border-radius: 5px; box-shadow: 3px 3px 0 #ffd7e3; font-size: 14px; font-weight: 700; text-decoration: none; } .ds-nav-cta span { margin-left: 18px; } .ds-nav-cta:focus-visible { outline: 3px solid #0585aa; outline-offset: 5px; }"
+    },
+    {
+      "name": "Craft Card",
+      "kind": "card",
+      "refersTo": "craft-card-beads",
+      "description": "Sticker project card. Swap background for nails (#d7f4fa) or charms (#e6f6cf).",
+      "html": "<article class=\"ds-craft-card\"><div class=\"ds-card-top\"><span>01</span><span>BEAD ART</span></div><h3>拼豆小宇宙</h3><p>把喜欢的图案，一颗一颗拼出来。</p><div class=\"ds-card-bottom\"><span>像素图案 · 趣味配色</span><button type=\"button\" aria-label=\"选择拼豆项目\">↗</button></div></article>",
+      "css": ".ds-craft-card { border: 1.5px solid #163e4c; border-radius: 12px; padding: 25px 25px 21px; background: #ffe0e9; color: #164d5b; box-shadow: 4px 5px 0 #173e4c; transition: transform .2s; } .ds-craft-card:hover { transform: translateY(-4px); } .ds-card-top { display: flex; justify-content: space-between; font-size: 12px; letter-spacing: .12em; } .ds-card-top span:first-child { font-weight: 800; border: 1px solid currentColor; border-radius: 50%; width: 31px; height: 31px; display: grid; place-items: center; } .ds-craft-card h3 { font-size: 26px; margin: 25px 0 12px; letter-spacing: -.04em; } .ds-craft-card p { font-size: 14px; line-height: 1.9; margin: 0 0 26px; } .ds-card-bottom { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #164d5b30; padding-top: 15px; font-size: 12px; } .ds-card-bottom button { background: #ffffffa0; border: 1px solid #163e4c; width: 36px; height: 36px; border-radius: 50%; font-size: 23px; color: #164d5b; cursor: pointer; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Paper field with a cool cyan focus ring.",
+      "html": "<label class=\"ds-field\"><span>怎么称呼你</span><input type=\"text\" placeholder=\"填写测试昵称\"></label>",
+      "css": ".ds-field { display: block; color: #164d5b; font-size: 14px; font-weight: 700; } .ds-field span { display: block; margin: 0 0 6px; } .ds-field input { width: 100%; background: #fffafb; border: 1px solid #c9d5d8; border-radius: 5px; padding: 11px 12px; color: #164d5b; font-size: 14px; line-height: 1.5; } .ds-field input:focus { outline: 2px solid #53b5cf; outline-offset: 1px; }"
+    },
+    {
+      "name": "Booking Panel",
+      "kind": "card",
+      "refersTo": "booking-panel",
+      "description": "White booking sheet with a pale cyan stamp shadow and preview chip.",
+      "html": "<div class=\"ds-booking\"><div class=\"ds-booking-title\"><h3>预约你的手作时光</h3><span>预览体验</span></div><p>先试试看预约流程。此页面不会发送或保存预约。</p></div>",
+      "css": ".ds-booking { background: #ffffff; border: 1.5px solid #163e4c; border-radius: 13px; box-shadow: 7px 7px 0 #cbeef4; padding: 29px 30px; color: #164d5b; } .ds-booking-title { display: flex; align-items: center; justify-content: space-between; gap: 10px; } .ds-booking-title h3 { font-size: 21px; margin: 0; } .ds-booking-title > span { background: #ffe6ee; padding: 2px 9px; border-radius: 4px; font-size: 12px; white-space: nowrap; } .ds-booking p { font-size: 12px; color: #748188; margin: 9px 0 0; }"
+    },
+    {
+      "name": "Art Label",
+      "kind": "chip",
+      "refersTo": "nav-cta",
+      "description": "Slightly rotated white sticker used on the hero illustration.",
+      "html": "<span class=\"ds-art-label\">47 &amp; domi</span>",
+      "css": ".ds-art-label { display: inline-block; background: #ffffff; border: 1.5px solid #163e4c; color: #164d5b; font-size: 12px; padding: 5px 14px; transform: rotate(7deg); box-shadow: 3px 3px 0 #ffd1df; }"
+    },
+    {
+      "name": "Wordmark",
+      "kind": "custom",
+      "refersTo": "nav-cta",
+      "description": "Stacked brand mark: cyan domi, pink heart, tracked HOMESTUDIO.",
+      "html": "<a class=\"ds-brand\" href=\"#home\" aria-label=\"domi 首页\"><strong>domi<span>♥</span></strong><small>HOMESTUDIO</small></a>",
+      "css": ".ds-brand { display: inline-flex; flex-direction: column; line-height: 1; align-items: center; color: inherit; text-decoration: none; } .ds-brand strong { font-size: 43px; letter-spacing: -3px; color: #147c99; font-weight: 950; } .ds-brand strong span { font-size: 17px; color: #ec85a4; vertical-align: top; margin-left: 4px; letter-spacing: 0; } .ds-brand small { font-size: 10px; letter-spacing: 3px; margin-top: 9px; font-weight: 800; color: #164d5b; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Pixel Heart Studio",
+    "overview": "domi homestudio 是一间拼豆、美甲与热缩片手绘小店的预览站。视觉世界不是豪华电商，也不是扁平 SaaS：它像一间像素爱心工坊——藏青墨色写字，糖果粉画心，薄荷绿当按钮，卡通插画（47 抱着小恐龙 domi）承担品牌记忆。界面密度适中：大标题很重（900），正文很松（行高 1.8），卡片像贴在纸上的色块贴纸。\n\n气质是可爱、像素、工坊、可触摸。中英混排是品牌声音的一部分：中文承担情感标题，英文大写 eyebrow / 项目编号承担工坊标签。♥、✦、↗ 是固定符号，不是装饰噪音。\n\n明确拒绝：玻璃拟态、模糊大阴影、全宽渐变英雄区、纯黑白无彩色、过度衬线杂志风。可爱要克制在工坊尺度里，不要变成豪华店面。",
+    "keyCharacteristics": [
+      "藏青工坊墨色做文字与描边，糖果粉与薄荷绿做色块，插画用正片叠底贴在纸面上",
+      "硬边、实色偏移阴影（无模糊），组件像贴纸",
+      "极重无衬线中文标题 + 大写英文标签",
+      "双语、像素爱心、微旋转标签是签名细节"
+    ],
+    "rules": [
+      { "name": "The Ink-Line Rule", "body": "文字与描边只许用 ink / line 这一对工坊青。禁止用纯黑 #000 或中性灰描边。", "section": "colors" },
+      { "name": "The One Mint Rule", "body": "薄荷绿只给主行动按钮。卡片、色带、导航不要再铺一层薄荷。", "section": "colors" },
+      { "name": "The Bilingual Label Rule", "body": "章节 eyebrow 与卡片英文名保持大写英文；情感标题保持中文。不要把 h1/h2 改成英文，也不要把 eyebrow 改成中文句。", "section": "typography" },
+      { "name": "The Paper Width Rule", "body": "内容永远居中收在纸面宽度里，不要做全出血色块英雄（预览顶栏与关于格纸除外）。", "section": "layout" },
+      { "name": "The No-Blur Rule", "body": "阴影必须是 Npx Npx 0 <solid color>。禁止 rgba 模糊投影和大面积 drop-shadow。", "section": "elevation" },
+      { "name": "The Soft-Rect Rule", "body": "容器保持带一点点圆的矩形。禁止 999px 胶囊主按钮，禁止完全直角卡片。", "section": "shapes" }
+    ],
+    "dos": [
+      "Do 用藏青墨色写字、用糖果粉标记喜欢、用薄荷绿做唯一主按钮。",
+      "Do 用硬边实色阴影表现贴纸深度，悬停时平移而不是发光。",
+      "Do 保持中英分工：中文标题、英文大写标签。",
+      "Do 让品牌插画 multiply 贴在腮红纸上，保留像素爱心、✦、↗。",
+      "Do 项目卡三色分岗：粉 / 青 / 嫩绿。"
+    ],
+    "donts": [
+      "Don't 使用模糊卡片阴影、玻璃拟态或全宽渐变英雄。",
+      "Don't 把主按钮改成实心藏青或纯白描边胶囊。",
+      "Don't 引入第二套展示字体或纯黑/纯灰中性色替换工坊青。",
+      "Don't 把三张项目卡刷成同一背景色。",
+      "Don't 去掉预览顶栏的「尚未发送」语气，或把演示表单扮成真实下单。"
+    ]
+  }
+}
