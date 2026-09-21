@@ -2,19 +2,81 @@
   "timezone": "America/Toronto",
   "notes": "weekday: 0=周日 … 6=周六。repeat weekly 会套到接下来七天；单次占用用 {date:'YYYY-MM-DD', start:'HH:MM'}。",
   "hours": {
-    "weekday": { "start": "19:00", "end": "22:00" },
-    "weekend": { "start": "10:00", "end": "20:00" }
+    "weekday": {
+      "start": "19:00",
+      "end": "22:00"
+    },
+    "weekend": {
+      "start": "10:00",
+      "end": "20:00"
+    }
   },
   "slotMinutes": 60,
+  "slotCapacity": 3,
   "bookings": [
-    { "repeat": "weekly", "weekday": 1, "start": "19:00" },
-    { "repeat": "weekly", "weekday": 2, "start": "20:00" },
-    { "repeat": "weekly", "weekday": 4, "start": "21:00" },
-    { "repeat": "weekly", "weekday": 5, "start": "19:00" },
-    { "repeat": "weekly", "weekday": 6, "start": "11:00" },
-    { "repeat": "weekly", "weekday": 6, "start": "14:00" },
-    { "repeat": "weekly", "weekday": 6, "start": "16:00" },
-    { "repeat": "weekly", "weekday": 0, "start": "10:00" },
-    { "repeat": "weekly", "weekday": 0, "start": "13:00" }
+    {
+      "id": "weekly-mon-19",
+      "repeat": "weekly",
+      "weekday": 1,
+      "start": "19:00"
+    },
+    {
+      "id": "weekly-tue-20",
+      "repeat": "weekly",
+      "weekday": 2,
+      "start": "20:00"
+    },
+    {
+      "id": "weekly-thu-21",
+      "repeat": "weekly",
+      "weekday": 4,
+      "start": "21:00"
+    },
+    {
+      "id": "weekly-fri-19",
+      "repeat": "weekly",
+      "weekday": 5,
+      "start": "19:00"
+    },
+    {
+      "id": "weekly-sat-11",
+      "repeat": "weekly",
+      "weekday": 6,
+      "start": "11:00"
+    },
+    {
+      "id": "weekly-sat-14",
+      "repeat": "weekly",
+      "weekday": 6,
+      "start": "14:00"
+    },
+    {
+      "id": "weekly-sat-16",
+      "repeat": "weekly",
+      "weekday": 6,
+      "start": "16:00"
+    },
+    {
+      "id": "weekly-sun-10",
+      "repeat": "weekly",
+      "weekday": 0,
+      "start": "10:00"
+    },
+    {
+      "id": "weekly-sun-13",
+      "repeat": "weekly",
+      "weekday": 0,
+      "start": "13:00"
+    },
+    {
+      "id": "bk_d4ce84f950",
+      "date": "2026-09-21",
+      "start": "20:00",
+      "people": 2,
+      "name": "Alan",
+      "project": "拼豆",
+      "note": "",
+      "createdAt": "2026-09-20T23:13:04-04:00"
+    }
   ]
 }

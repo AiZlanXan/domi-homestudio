@@ -18,10 +18,12 @@ document.querySelector('#copy-summary').addEventListener('click',async()=>{try{a
 
 const WEEKDAY_CN=['周日','周一','周二','周三','周四','周五','周六'];
 const WEEKDAY_EN={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
+const SLOT_CAPACITY=3;
 const DEFAULT_SCHEDULE={
     timezone:'America/Toronto',
     hours:{weekday:{start:'19:00',end:'22:00'},weekend:{start:'10:00',end:'20:00'}},
     slotMinutes:60,
+    slotCapacity:SLOT_CAPACITY,
     bookings:[
         {repeat:'weekly',weekday:1,start:'19:00'},
         {repeat:'weekly',weekday:2,start:'20:00'},
@@ -87,6 +89,28 @@ function slotsForRange(range,slotMinutes){
 function escapeText(value){
     return String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 }
+function slotCapacityOf(config){
+    const n=Number(config.slotCapacity);
+    return Number.isInteger(n)&&n>0?n:SLOT_CAPACITY;
+}
+function peopleOf(item,cap){
+    if(item.repeat==='weekly') return cap;
+    const n=Number(item.people);
+    return Number.isInteger(n)&&n>0?Math.min(cap,n):1;
+}
+function occupancyMap(bookings,days,weekdayMap,cap){
+    const used=new Map();
+    const add=(key,count)=>used.set(key,Math.min(cap,(used.get(key)||0)+count));
+    for(const item of bookings||[]){
+        if(item.date&&item.start) add(`${item.date}|${item.start}`,peopleOf(item,cap));
+        if(item.repeat==='weekly'&&Number.isInteger(item.weekday)&&item.start){
+            for(const date of days){
+                if(weekdayMap[date]===item.weekday) add(`${date}|${item.start}`,cap);
+            }
+        }
+    }
+    return used;
+}
 
 function renderWeekBoard(config){
     const board=document.querySelector('#week-board');
@@ -100,15 +124,8 @@ function renderWeekBoard(config){
     const nowMins=Number(now.hour)*60+Number(now.minute);
     const days=Array.from({length:7},(_,i)=>addDaysISO(today,i));
     const weekdayMap=Object.fromEntries(days.map(date=>[date,weekdayFromISO(date,tz)]));
-    const booked=new Set();
-    for(const item of config.bookings||[]){
-        if(item.date&&item.start) booked.add(`${item.date}|${item.start}`);
-        if(item.repeat==='weekly'&&Number.isInteger(item.weekday)&&item.start){
-            for(const date of days){
-                if(weekdayMap[date]===item.weekday) booked.add(`${date}|${item.start}`);
-            }
-        }
-    }
+    const cap=slotCapacityOf(config);
+    const used=occupancyMap(config.bookings,days,weekdayMap,cap);
     let openCount=0;
     let bookedCount=0;
     const models=[];
@@ -121,10 +138,12 @@ function renderWeekBoard(config){
         const isWeekend=weekday===0||weekday===6;
         const [,month,day]=date.split('-');
         const slots=slotsForRange(range,slotMinutes).map(start=>{
+            const occupied=used.get(`${date}|${start}`)||0;
+            const left=Math.max(0,cap-occupied);
             let state='open';
-            let label='可约';
+            let label=left===cap?'可约':`余${left}`;
             if(isToday&&parseHM(start)<=nowMins){state='past';label='已过';}
-            else if(booked.has(`${date}|${start}`)){state='booked';label='已约';bookedCount+=1;}
+            else if(left===0){state='booked';label='已满';bookedCount+=1;}
             else {openCount+=1;}
             return {start,state,label};
         });

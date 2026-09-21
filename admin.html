@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>工作室后台 · domi homestudio</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <script src="admin.js" defer></script>
+</head>
+
+<body class="admin-body">
+
+<div class="preview-note">STUDIO DESK · 本地后台 <span>预约写入 bookings.json，前台刷新后可见 · 请勿公开分享此地址</span></div>
+
+<header>
+    <a class="brand" href="/" aria-label="回官网首页">
+        <strong>domi<span>♥</span></strong>
+        <small>HOMESTUDIO</small>
+    </a>
+    <nav aria-label="后台导航">
+        <a href="/#week">前台周历</a>
+        <a href="/" class="nav-cta">回官网 <span>↗</span></a>
+    </nav>
+</header>
+
+<main class="wrap admin-main">
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">DESK / STUDIO BOOKINGS</span>
+            <h2>预约台账</h2>
+        </div>
+        <p>查看占用，登记新的一档。<br>不会发给客人，只更新本机文件。</p>
+    </div>
+
+    <div class="admin-grid">
+        <section class="booking-panel" aria-labelledby="admin-form-title">
+            <div class="booking-title">
+                <h3 id="admin-form-title">登记一档预约</h3>
+                <span>写入系统</span>
+            </div>
+            <p class="form-note">每个时段最多 3 人。未满的时段仍可再登记，名额不够的格子选不了。</p>
+            <form id="admin-form">
+                <div class="form-row">
+                    <div>
+                        <label for="admin-date">日期</label>
+                        <input id="admin-date" name="date" type="date" required>
+                    </div>
+                    <div>
+                        <label for="admin-people">人数</label>
+                        <select id="admin-people" name="people" required>
+                            <option value="1">1 人</option>
+                            <option value="2">2 人</option>
+                            <option value="3">3 人</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="admin-start">时段</label>
+                    <select id="admin-start" name="start" required>
+                        <option value="">先选日期</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div>
+                        <label for="admin-name">怎么称呼</label>
+                        <input id="admin-name" name="name" maxlength="30" required autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="admin-project">项目</label>
+                        <select id="admin-project" name="project" required>
+                            <option value="">选择一个项目</option>
+                            <option>拼豆</option>
+                            <option>美甲</option>
+                            <option>热缩片手绘</option>
+                            <option>想先聊聊</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="admin-note">备注 <span>选填</span></label>
+                <textarea id="admin-note" name="note" rows="3" maxlength="500" placeholder="例如：想做一枚小恐龙热缩片……"></textarea>
+                <button class="button primary submit" type="submit">写入预约 <span>↗</span></button>
+                <p id="admin-form-status" class="privacy-note" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="admin-ledger" aria-labelledby="admin-list-title">
+            <div class="booking-title">
+                <h3 id="admin-list-title">已登记预约</h3>
+                <span id="admin-list-count">读取中</span>
+            </div>
+            <div id="admin-list"></div>
+        </section>
+    </div>
+</main>
+
+</body>
+</html>

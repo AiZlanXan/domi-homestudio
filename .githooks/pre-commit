@@ -1,0 +1,7 @@
+#!/bin/sh
+# Keep the Impeccable sidecar in lockstep with DESIGN.md.
+root="$(git rev-parse --show-toplevel)"
+python "$root/scripts/ensure-sidecar-fresh.py" || {
+  echo "Commit blocked: update .impeccable/design.json to match DESIGN.md." >&2
+  exit 1
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-21T00:00:00.000Z",
+  "generatedAt": "2026-09-21T03:40:00.000Z",
   "title": "Design System: domi homestudio",
   "extensions": {
     "colorMeta": {
@@ -127,11 +127,13 @@
       { "name": "card-stamp", "value": "4px 5px 0 #173e4c", "purpose": "Craft cards." },
       { "name": "panel-stamp", "value": "7px 7px 0 #cbeef4", "purpose": "Booking panel." },
       { "name": "dialog-stamp", "value": "8px 8px 0 #a7d5df", "purpose": "Booking summary dialog." },
-      { "name": "polaroid-stamp", "value": "7px 7px 0 #edb3c5", "purpose": "About-section owner polaroid." }
+      { "name": "polaroid-stamp", "value": "7px 7px 0 #edb3c5", "purpose": "About-section owner polaroid and admin ledger." },
+      { "name": "day-selected", "value": "4px 4px 0 #163e4c", "purpose": "Selected equal-height week-day card; transform translate(-1px,-2px) with no layout shift." }
     ],
     "motion": [
       { "name": "button-lift", "value": "transform .15s, box-shadow .15s", "purpose": "Primary button hover lift." },
       { "name": "card-lift", "value": "transform .2s", "purpose": "Craft card translateY(-4px) on hover." },
+      { "name": "day-select", "value": "transform .15s, box-shadow .15s", "purpose": "Week-day hover/selected lift. Must not change card height." },
       { "name": "reduced", "value": "transition: none", "purpose": "Honor prefers-reduced-motion on every animated property." }
     ],
     "breakpoints": [
@@ -204,6 +206,22 @@
       "description": "Stacked brand mark: cyan domi, pink heart, tracked HOMESTUDIO.",
       "html": "<a class=\"ds-brand\" href=\"#home\" aria-label=\"domi 首页\"><strong>domi<span>♥</span></strong><small>HOMESTUDIO</small></a>",
       "css": ".ds-brand { display: inline-flex; flex-direction: column; line-height: 1; align-items: center; color: inherit; text-decoration: none; } .ds-brand strong { font-size: 43px; letter-spacing: -3px; color: #147c99; font-weight: 950; } .ds-brand strong span { font-size: 17px; color: #ec85a4; vertical-align: top; margin-left: 4px; letter-spacing: 0; } .ds-brand small { font-size: 10px; letter-spacing: 3px; margin-top: 9px; font-weight: 800; color: #164d5b; }"
+    },
+    {
+      "name": "Week Day",
+      "kind": "chip",
+      "refersTo": "nav-cta",
+      "description": "Equal-height day selector. Times never expand inside this card.",
+      "html": "<button class=\"ds-week-day is-selected\" type=\"button\"><span class=\"ds-week-name\">周一</span><time>9月21日</time><span class=\"ds-week-count\">还可约 2 档</span></button>",
+      "css": ".ds-week-day { display: flex; flex-direction: column; gap: 4px; min-height: 118px; min-width: 128px; text-align: left; padding: 14px 12px 12px; background: #fffafb; color: #164d5b; border: 1.5px solid #163e4c; border-radius: 12px; cursor: pointer; transition: transform .15s, box-shadow .15s; } .ds-week-day:hover { transform: translateY(-2px); } .ds-week-day.is-selected { box-shadow: 4px 4px 0 #163e4c; transform: translate(-1px, -2px); } .ds-week-day:focus-visible { outline: 3px solid #0585aa; outline-offset: 5px; } .ds-week-name { font-size: 15px; font-weight: 800; } .ds-week-day time { font-size: 12px; color: #377988; } .ds-week-count { margin-top: auto; font-size: 12px; font-weight: 700; }"
+    },
+    {
+      "name": "Slot Status",
+      "kind": "chip",
+      "refersTo": "input",
+      "description": "Hour chip for the fixed-height slot panel: open, remaining, full, or past. Capacity is 3 people.",
+      "html": "<div class=\"ds-slots\"><span class=\"ds-slot open\"><span>19:00</span><span>可约</span></span><span class=\"ds-slot booked\"><span>20:00</span><span>已满</span></span><span class=\"ds-slot past\"><span>18:00</span><span>已过</span></span></div>",
+      "css": ".ds-slots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; } .ds-slot { display: flex; justify-content: space-between; align-items: center; gap: 8px; border: 1px solid #163e4c; border-radius: 5px; padding: 5px 8px; font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; background: #fff; color: #164d5b; } .ds-slot.open span:last-child { color: #076e8a; } .ds-slot.booked { background: #ffe6ee; color: #a64669; border-color: #edb3c5; } .ds-slot.booked span:first-child { text-decoration: line-through; } .ds-slot.past { background: #d5f7fc; color: #164d5b; border-color: #a7d5df; }"
     }
   ],
   "narrative": {
