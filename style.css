@@ -477,7 +477,7 @@ h2 {
 }
 
 .booking-card {
-    background:#d8d8d8a0;
+    background:#fdfae0;
     width:100%;
     height:100%;
     border-radius:15%;
@@ -485,15 +485,48 @@ h2 {
     padding: 24px;
     box-sizing: border-box;
     flex: 1;
+    box-shadow:3px 4px 0 #757575;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
-.time-card h3 {
-  margin: 0 0 20px;
-  font-size: 1.6rem;
+.booking-card:hover {
+    transform: scale(1.03);
+    box-shadow: 
+        3px 4px 0 #757575,
+        0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
-.time-card p {
-  margin: 10px 0;
+.booking-bottom {
+    grid-column: 1 / -1;
+
+    border-top: 1px solid #00000030;
+    padding-top: 15px;
+    font-size: 12px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    min-width: 0;
+}
+
+.date-label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+/* 临近日期 */
+.date-near {
+    color: #d6a100;
+}
+
+/* 较远日期 */
+.date-far {
+    color: #5f9860;
 }
 
 /* ============================================================

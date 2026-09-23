@@ -249,3 +249,34 @@ document.querySelector(
 
 });
 
+/* ============================================================
+   06. SHOWS AVALIABLE TIME / 展示可用时间
+   ============================================================ */
+
+
+document.querySelectorAll('.date-label').forEach(label => {
+
+    const targetDay = Number(label.dataset.day);
+    const currentDay = today.getDay();
+
+    let diff = targetDay - currentDay;
+
+    if (diff < 0) {
+        diff += 7;
+    }
+
+    const targetDate = new Date(today);
+    targetDate.setDate(today.getDate() + diff);
+
+    const month = targetDate.getMonth() + 1;
+    const day = targetDate.getDate();
+
+    label.textContent = `${month}/${day}`;
+
+    // 根据距离今天的天数改变颜色
+    if (diff <= 2) {
+        label.classList.add('date-near');
+    } else {
+        label.classList.add('date-far');
+    }
+});
