@@ -1,23 +1,6 @@
 /*
 DOMI CRAFT - MAIN CSS
-================================================================
-01 Design Tokens            设计变量
-02 Preview Note             顶部提示
-03 Layout Container         页面宽度
-04 Header & Navigation      页头与导航
-05 Hero                     首页首屏
-06 Ribbon                   横向提示条
-07 General Sections         通用区块
-08 Craft Cards              项目卡片
-09 About                    关于我们
-10 Contact & Booking        联系与预约
-11 Footer                   页脚
-12 Dialog                   弹窗
-13 Large Screen             大屏适配
-14 Tablet                   平板适配
-15 Mobile                   手机适配
-16 Accessibility            减少动画
-================================================================
+
 
 维护建议：
 - 新增样式时放到对应模块中
@@ -458,6 +441,13 @@ h2 {
 @keyframes work-enter{from{opacity:.55;transform:translateX(18px)}to{opacity:1;transform:translateX(0)}}
 @media(max-width:640px){.work-panel{grid-template-columns:1fr}.work-panel-copy{padding:26px 26px 0}.work-model,.work-placeholder{height:280px}}
 @media(prefers-reduced-motion:reduce){.work-slide.is-entering{animation:none}}
+
+#booking { margin-top: 50px; }
+
+@media (max-width: 640px) {
+  #booking { margin-top: 32px; }
+}
+
 
 /* ============================================================
    09. BOOKING / 预约
